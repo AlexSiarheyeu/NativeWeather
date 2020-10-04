@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="gTV-IL-0wX" customClass="WeatherStateCell" customModule="NativeWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-gw-36G">
+                        <rect key="frame" x="30" y="59" width="279" height="0.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.29999999999999999" id="he8-aW-G8v"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:03 АМ" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLG-PE-i3c">
+                        <rect key="frame" x="30" y="26.5" width="88.5" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВОСХОД СОЛНЦА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coV-vY-tVe">
+                        <rect key="frame" x="30" y="6" width="279" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPn-cs-moP">
+                        <rect key="frame" x="0.0" y="0.5" width="339" height="0.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.29999999999999999" id="WHZ-o8-rdM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.064667166100000006" green="0.75066887839999996" blue="0.94349315069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="coV-vY-tVe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="Hxi-gD-a5t"/>
+                <constraint firstItem="eLG-PE-i3c" firstAttribute="leading" secondItem="kO0-gw-36G" secondAttribute="leading" id="IXW-3z-zg5"/>
+                <constraint firstItem="kO0-gw-36G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="OaM-lw-oq0"/>
+                <constraint firstItem="gPn-cs-moP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Q99-fv-ryJ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="coV-vY-tVe" secondAttribute="trailing" constant="30" id="WG5-bj-One"/>
+                <constraint firstItem="coV-vY-tVe" firstAttribute="leading" secondItem="eLG-PE-i3c" secondAttribute="leading" id="dOh-YU-kLJ"/>
+                <constraint firstItem="kO0-gw-36G" firstAttribute="top" secondItem="eLG-PE-i3c" secondAttribute="bottom" constant="5" id="f1O-zz-wrj"/>
+                <constraint firstAttribute="bottom" secondItem="kO0-gw-36G" secondAttribute="bottom" constant="5.5" id="fOw-tv-ZaG"/>
+                <constraint firstAttribute="trailing" secondItem="gPn-cs-moP" secondAttribute="trailing" id="fj6-yk-0tL"/>
+                <constraint firstItem="coV-vY-tVe" firstAttribute="top" secondItem="gPn-cs-moP" secondAttribute="bottom" constant="5" id="wAW-ay-90W"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="kO0-gw-36G" secondAttribute="trailing" constant="30" id="xK3-bG-Zhr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="339" height="65"/>
+            <connections>
+                <outlet property="separatorLine" destination="gPn-cs-moP" id="nzK-3D-aDZ"/>
+                <outlet property="weatherStateLabel" destination="coV-vY-tVe" id="W4r-AL-U4t"/>
+                <outlet property="weatherValueLabel" destination="eLG-PE-i3c" id="V7W-7t-Jyj"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="98.772321428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="DailyWeatherCell" customModule="NativeWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-eP-BhG">
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="65"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.stars.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-aA-dmg">
+                                <rect key="frame" x="207.5" y="21.5" width="20" height="19.5"/>
+                                <color key="tintColor" red="0.064667166100000006" green="0.95178724309999996" blue="0.94349315069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA3-Q1-aab">
+                                <rect key="frame" x="392" y="21" width="21" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="lnX-gH-qxj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вторник" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPp-KQ-bDy">
+                                <rect key="frame" x="8" y="21" width="75" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLv-3v-1Ri">
+                                <rect key="frame" x="354" y="21" width="23" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="4lp-cb-pG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cpo-aA-dmg" firstAttribute="centerX" secondItem="G8Z-eP-BhG" secondAttribute="centerX" id="1sa-3V-SvB"/>
+                            <constraint firstItem="UPp-KQ-bDy" firstAttribute="centerY" secondItem="G8Z-eP-BhG" secondAttribute="centerY" id="PxG-Zv-KyJ"/>
+                            <constraint firstItem="cpo-aA-dmg" firstAttribute="centerY" secondItem="G8Z-eP-BhG" secondAttribute="centerY" id="Rqg-gh-ebM"/>
+                            <constraint firstItem="UPp-KQ-bDy" firstAttribute="leading" secondItem="G8Z-eP-BhG" secondAttribute="leading" constant="8" id="Vua-fy-OlJ"/>
+                            <constraint firstItem="eA3-Q1-aab" firstAttribute="leading" secondItem="qLv-3v-1Ri" secondAttribute="trailing" constant="15" id="jaM-NJ-19f"/>
+                            <constraint firstAttribute="trailing" secondItem="eA3-Q1-aab" secondAttribute="trailing" constant="22" id="wRP-ji-YGJ"/>
+                            <constraint firstItem="qLv-3v-1Ri" firstAttribute="baseline" secondItem="UPp-KQ-bDy" secondAttribute="baseline" id="wbl-do-7Ye"/>
+                            <constraint firstItem="eA3-Q1-aab" firstAttribute="baseline" secondItem="qLv-3v-1Ri" secondAttribute="baseline" id="yyZ-hd-0sE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="G8Z-eP-BhG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Uo-9D-2Ig"/>
+                <constraint firstAttribute="bottom" secondItem="G8Z-eP-BhG" secondAttribute="bottom" id="ZUS-cs-FPn"/>
+                <constraint firstAttribute="trailing" secondItem="G8Z-eP-BhG" secondAttribute="trailing" id="adw-AN-Ukg"/>
+                <constraint firstItem="G8Z-eP-BhG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gYJ-9b-N8K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="435" height="65"/>
+            <connections>
+                <outlet property="highTemperatureLabel" destination="qLv-3v-1Ri" id="Ak1-Oj-tSc"/>
+                <outlet property="lowTemperatureLabel" destination="eA3-Q1-aab" id="Hgy-2C-tla"/>
+                <outlet property="weatherStateImageView" destination="cpo-aA-dmg" id="4hC-by-ulK"/>
+                <outlet property="weekDayLabel" destination="UPp-KQ-bDy" id="HY5-5w-m76"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="118.86160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moon.stars.fill" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
