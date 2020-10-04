@@ -1,3 +1,3 @@
 # NativeWeather
 
-![](gifWeather.gif)
+
